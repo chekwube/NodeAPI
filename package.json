@@ -1,0 +1,48 @@
+{
+  "name": "node-api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon --exec babel-node ./bin/www.js",
+    "test": "nodemon --exec babel-node ./node_modules/mocha/bin/mocha src/tests/TestSuite.spec.js --reporter spec",
+    "test-with-coverage": "nyc --exec babel-node --reporter=text node ./node_modules/mocha/bin/mocha src/tests/TestSuite.spec.js --reporter spec"
+  },
+  "dependencies": {
+    "@hapi/joi": "^15.1.1",
+    "compression": "^1.7.4",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.5",
+    "debug": "^2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "http-errors": "^1.7.3",
+    "istanbul": "^0.4.5",
+    "jade": "~1.11.0",
+    "jsonpatch": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mocha": "^6.2.2",
+    "morgan": "^1.9.1",
+    "node-thumbnail": "^0.15.0",
+    "should": "^13.2.3",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/node": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "nodemon": "^2.0.2",
+    "nyc": "^14.1.0"
+  },
+  "description": "An API server built with Node to demonstrate jwt, json patching and thumbnail generation.",
+  "main": "app.js",
+  "bin": {
+    "node-api": "www.js"
+  },
+  "keywords": [
+    "login",
+    "patcher",
+    "thumbnail generator"
+  ],
+  "author": "Okeke Chekwube",
+  "license": "ISC"
+}
