@@ -101,7 +101,7 @@ This endpoint accepts two parameters (document and patch) which are JSON objects
 
 This endpoint accepts an image url, generates a 50x50 thumbnail image and returns it to the user.
 
-* Sample Request: https://localhost:5000/api/generatethumbnail?token=token=your_generated_web_token_at_login&image=imagepath
+* Sample Request: https://localhost:5000/api/generatethumbnail?token=your_generated_web_token_at_login&image=imagepath
 * Sample Response: A 50x50 thumbnail image
 * Note:  Set token equals the token received at login and image equals to the url/path of the image 
 
