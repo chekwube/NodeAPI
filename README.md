@@ -66,7 +66,7 @@ Request body should contain username and password; the API will return a token f
                     "user": "Your username",
                     "token": "The generate web token"   
                 }
-*Note: Any username/password combination is accepted, since this it just a mock authentication service*
+* Note: Any username/password combination is accepted, since this it just a mock authentication service*
 
 ### JSON Patch
 * Request Method: PATCH
@@ -93,17 +93,17 @@ This endpoint accepts two parameters (document and patch) which are JSON objects
                         "foo": "bar"
                     }
                 }
-*Note: Set token equals the token received at login
+* Note: Set token equals the token received at login
 
 ### Thumbnail Generation
 * Request Method: GET
 * URL: https://localhost:5000/api/generatethumbnail?token=your_generated_web_token_at_login&image=imagepath
 
 This endpoint accepts an image url, generates a 50x50 thumbnail image and returns it to the user.
-* Sample Request: https://localhost:5000/api/generatethumbnail?token=token=your_generated_web_token_at_login&image=imagepath
 
+* Sample Request: https://localhost:5000/api/generatethumbnail?token=token=your_generated_web_token_at_login&image=imagepath
 * Sample Response: A 50x50 thumbnail image
-*Note:  Set token equals the token received at login and image equals to the url/path of the image 
+* Note:  Set token equals the token received at login and image equals to the url/path of the image 
 
 ## Modules used
 
